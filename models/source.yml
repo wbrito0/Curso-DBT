@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+    - name: dbt
+      project: att-no-sheets 
+      dataset: dbt
+      tables:
+        - name: clientes
+        - name: itens_pedidos
+        - name: pedidos
+        - name: produtos
+        - name: estados_brasileiros
