@@ -10,3 +10,4 @@ sources:
         - name: pedidos
         - name: produtos
         - name: estados_brasileiros
+        - name: resumo_pedidos
