@@ -14,14 +14,10 @@ select
     extract(year from date(p.data_pedido)) as ano_pedido,
     extract(month from date(p.data_pedido)) as mes_pedido,
     case
-        when extract(month from date(p.data_pedido)) between 1 and 3
-        then 'T1'
-        when extract(month from date(p.data_pedido)) between 4 and 6
-        then 'T2'
-        when extract(month from date(p.data_pedido)) between 7 and 9
-        then 'T3'
-        when extract(month from date(p.data_pedido)) between 10 and 12
-        then 'T4'
+        when extract(month from date(p.data_pedido)) between 1 and 3 then 'T1'
+        when extract(month from date(p.data_pedido)) between 4 and 6 then 'T2'
+        when extract(month from date(p.data_pedido)) between 7 and 9 then 'T3'
+        when extract(month from date(p.data_pedido)) between 10 and 12 then 'T4'
     end as trimestre,
     pr.itens_vendidos,
     p.status,
